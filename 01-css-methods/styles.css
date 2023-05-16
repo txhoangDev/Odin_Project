@@ -1,0 +1,12 @@
+div {
+    /* changes background color */
+    background-color: red;
+    /* changes text color */
+    color: white;
+    /* changes size of font */
+    font-size: 32px;
+    /* changes text alignment */
+    text-align: center;
+    /* changes weight of text */
+    font-weight: bold;
+}
