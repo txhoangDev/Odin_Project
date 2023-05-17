@@ -1,0 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+}
+
+a {
+    font-size: 30px;
+}
