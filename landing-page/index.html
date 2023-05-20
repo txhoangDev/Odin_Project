@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Overwatch</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        var copyrightFooter = document.getElementById("footer");
+        copyrightFooter.innerHTML =
+          "Copyright &copy; " + currentYear + " Thuong Hoang";
+      });
+      var video = document.getElementById("background-video");
+      video.style.height = window.innerHeight + "px";
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay loop muted id="background-video">
+      <source
+        src="https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt357a5ed8cccbf97e/63369a3c8537f87bfbcdc3c2/F2P_Trailer.webm"
+        type="video/webm"
+      />
+    </video>
+    <div class="header">
+      <div class="left">
+        <img id="logo" src="./images/logo.png" alt="logo" />
+        <img id="logo" src="./images/logo-words.png" />
+      </div>
+      <div class="right">
+        <ul>
+          <li><a>About</a></li>
+          <li><a>Heroes</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="layer">
+      <div class="layer1">
+        <div class="layer1-left">
+            <div class="heading">A future worth fighting for</div>
+            <div class="text">
+              A team-based first person shooter that is free to play. It is chaotic
+              and intriguing to watch or play. Join us today!
+            </div>
+            <button>Play Now</button>
+          </div>
+          <div class="layer1-right">
+            <img id="ow-image" src="./images/heroes.png" alt="OW heroes" />
+          </div>
+      </div>
+    </div>
+    <div class="layer">
+        <div class="layer2">
+            Heroes
+            <div class="cards">
+                <img id="content" src="./images/ashe.jpg" alt="ashe from overwatch" />
+                <img id="content" src="./images/dva.jpg" alt="D.va from overwatch" />
+                <img id="content" src="./images/kirko.png" alt="kirko from overwatch" />
+                <img id="content" src="./images/soldier76.jpg" alt="Soldier 76 from overwatch" />
+            </div>
+            <button id="view">View More</button>
+        </div>
+    </div>
+    <!-- <div class="layer3">
+        The future is worth fighting for. Join us!
+    </div>
+    <div class="layer4">
+        <div class="contact">
+            <div class="contact-left">
+                <div class="title">Sign up and download today!</div>
+                <div class="text">Join the force and click the button to create an account!</div>
+            </div>
+            <div class="contact-right">
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div> -->
+    <div id="footer"></div>
+  </body>
+</html>
