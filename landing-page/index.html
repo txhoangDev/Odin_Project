@@ -29,53 +29,62 @@
       </div>
       <div class="right">
         <ul>
-          <li><a>About</a></li>
-          <li><a>Heroes</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#content">Heroes</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="layer">
-      <div class="layer1">
+      <div class="layer1" id="about">
         <div class="layer1-left">
-            <div class="heading">A future worth fighting for</div>
-            <div class="text">
-              A team-based first person shooter that is free to play. It is chaotic
-              and intriguing to watch or play. Join us today!
-            </div>
-            <button>Play Now</button>
+          <div class="heading">A future worth fighting for</div>
+          <div class="text">
+            A team-based first person shooter that is free to play. It is
+            chaotic and intriguing to watch or play. Join us today!
           </div>
-          <div class="layer1-right">
-            <img id="ow-image" src="./images/heroes.png" alt="OW heroes" />
-          </div>
+          <a class="button" href="https://overwatch.blizzard.com/en-us/"
+            >Play Now</a
+          >
+        </div>
+        <div class="layer1-right">
+          <img id="ow-image" src="./images/heroes.png" alt="OW heroes" />
+        </div>
       </div>
     </div>
-    <div class="layer">
-        <div class="layer2">
-            Heroes
-            <div class="cards">
-                <img id="content" src="./images/ashe.jpg" alt="ashe from overwatch" />
-                <img id="content" src="./images/dva.jpg" alt="D.va from overwatch" />
-                <img id="content" src="./images/kirko.png" alt="kirko from overwatch" />
-                <img id="content" src="./images/soldier76.jpg" alt="Soldier 76 from overwatch" />
-            </div>
-            <button id="view">View More</button>
+    <div>
+      <div class="layer2">
+        Heroes
+        <div class="cards">
+          <img id="content" src="./images/ashe.jpg" alt="ashe from overwatch" />
+          <img id="content" src="./images/dva.jpg" alt="D.va from overwatch" />
+          <img id="content" src="./images/kirko.png" alt="kirko from overwatch" />
+          <img
+            id="content"
+            src="./images/soldier76.jpg"
+            alt="Soldier 76 from overwatch"
+          />
         </div>
-    </div>
-    <!-- <div class="layer3">
-        The future is worth fighting for. Join us!
-    </div>
-    <div class="layer4">
-        <div class="contact">
-            <div class="contact-left">
-                <div class="title">Sign up and download today!</div>
-                <div class="text">Join the force and click the button to create an account!</div>
+        <a href="https://overwatch.blizzard.com/en-us/heroes/" id="view">View More</a>
+      </div>
+      <div class="layer3">
+        <div id="quote">"The future is worth fighting for. Join us!"</div>
+        <div id="author">- Blizzard</div>
+      </div>
+      <div class="layer4-container" id="contact">
+        <div class="layer4">
+          <div class="contact-left">
+            <div class="title">Want to learn more?</div>
+            <div id="text">
+              Get in touch with one of the heroes to learn about the mission!
             </div>
-            <div class="contact-right">
-                <button>Sign Up</button>
-            </div>
+          </div>
+          <div class="contact-right">
+            <a href="https://overwatch.blizzard.com/en-us/" id="button-2">Contact Us!</a>
+          </div>
         </div>
-    </div> -->
-    <div id="footer"></div>
+      </div>
+      <div id="footer"></div>
+    </div>
   </body>
 </html>
