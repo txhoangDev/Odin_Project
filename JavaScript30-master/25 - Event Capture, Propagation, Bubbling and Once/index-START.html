@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body class="bod">
+
+  <div class="one">
+    <div class="two">
+      <div class="three">
+      </div>
+    </div>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: thistle;
+  }
+
+  .two {
+    background: mistyrose;
+  }
+
+  .three {
+    background: coral;
+  }
+</style>
+
+<button></button>
+<script>
+  const divs = document.querySelectorAll('div');
+
+  // logs all the elements that was clicked on
+  function logText(e) {
+    console.log(this.classList.value);
+    // e.stopPropagation(); // only prints the element that was clicked on (stop bubbling)
+  }
+
+  // will trigger all elements that are nested
+  // capture attribute prints all elements going down and not going up (default)
+  // once will remove listener after event was triggered once
+
+  divs.forEach(div => div.addEventListener('click', logText, {capture: true, once: true}));
+  button.addEventListenr('click', ()=> {
+    console.log('Click!!!');
+  }, {once: true});
+</script>
+</body>
+</html>
