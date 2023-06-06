@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Rock, Paper, Scissor</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock, Paper, Scissor</title>
+    <script src="./rockPaperScissor.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        var copyrightFooter = document.getElementById("footer");
+        copyrightFooter.innerHTML =
+          "Copyright &copy; " + currentYear + " Thuong Hoang";
+      });
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <body>
-        <script src="./rockPaperScissor.js"></script>
-        <script>
-            game();
-        </script>
-    </body>
+        <div class="header">
+            Rock Paper Scissor
+        </div>
+        <div class="content">
+            <div id="text">You Win</div>
+            <div class="result">
+                <div id="player">
+                    <div id="pscore">0</div>
+                    Player
+                </div>
+                <div id="computer">
+                    <div id="cscore">0</div>
+                    Computer
+                </div>
+            </div>
+            <div class="choices">
+                <button id="choice">
+                    <img src="./images/rock.png" alt="rock" />
+                </button>
+                <button id="choice">
+                    <img src="./images/paper.png" alt="paper" />
+                </button>
+                <button id="choice">
+                    <img src="./images/scissor.png" alt="scissor" />
+                </button>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+      </body>
+  </body>
 </html>
