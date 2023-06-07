@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <title>Rock, Paper, Scissor</title>
     <script src="./rockPaperScissor.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var currentYear = new Date().getFullYear();
-        var copyrightFooter = document.getElementById("footer");
-        copyrightFooter.innerHTML =
-          "Copyright &copy; " + currentYear + " Thuong Hoang";
-      });
-    </script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -20,7 +12,7 @@
             Rock Paper Scissor
         </div>
         <div class="content">
-            <div id="text">You Win</div>
+            <div id="text"></div>
             <div class="result">
                 <div id="player">
                     <div id="pscore">0</div>

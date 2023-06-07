@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
 body {
   height: 100vh;
   margin: 0;
@@ -76,4 +74,20 @@ button:hover {
 
 #text {
   font-size: 32px;
+}
+
+.typing {
+  animation: typing 1s steps(40, end);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid black;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
 }
